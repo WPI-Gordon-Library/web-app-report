@@ -1,0 +1,36 @@
+\documentclass[oneside, 12pt]{book}
+
+\input{packages/packages-test} % TODO: Remove testing packages.
+\input{packages/packages}
+
+\input{page/page-style}
+
+% Document info.
+\title{Mobile App Development For The WPI Gordon Library}
+\author{John Muirhead, Brandon Scanlon, Oliver Yasuna}
+\date{September 2021}
+
+\begin{document}
+
+\maketitle
+
+\frontmatter
+    \tableofcontents
+    \chapter{Abstract}
+        \input{chapters/abstract/abstract}
+    \chapter{Acknowledgements}
+        \input{chapters/acknowledgements/acknowledgements}
+    \chapter{Glossary}
+        \input{chapters/glossary/glossary}
+
+\mainmatter%{
+    \chapter{Introduction}
+        \input{chapters/introduction/introduction}
+    \chapter{Research}
+        \input{chapters/research/research}
+    \chapter{Methodology}
+        \input{chapters/methodology/methodology}
+    \chapter{Timeline}
+        \input{chapters/timeline/timeline}
+
+\end{document}
