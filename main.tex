@@ -8,13 +8,37 @@
 \input{constants}
 
 % Document info.
-\title{Mobile App Development For The WPI Gordon Library}
-\author{John Muirhead, Brandon Scanlon, Oliver Yasuna}
-\date{October 2021}
+%\title{Mobile App Development For The WPI Gordon Library}
+%\author{John Muirhead, Brandon Scanlon, Oliver Yasuna}
+%\date{October 2021} % TODO: Update.
 
 \begin{document}
 
-\maketitle
+%\maketitle
+\begin{titlepage}
+    \centering
+    {\LARGE\scshape \href{https://www.wpi.edu/}{Worcester Polytechnic Institute}\par}
+    \vspace*{1.2cm}
+    \href{https://www.wpi.edu/}{\includegraphics[]{assets/img/150px-WPI_logo.png}}\\
+    \vspace*{2cm}
+    \rule{\textwidth}{1pt}\\
+    \vspace{0.5cm}
+    {\huge\bfseries Mobile App Development for the WPI Gordon Library\par} % TODO: Link to Digital WPI.
+    \vspace{0.5cm}
+    \rule{\textwidth}{1pt}\\
+    \vspace{2cm}
+    {\large\scshape Participants} \\[\baselineskip]
+    {\Large
+        John Muirhead\\ % TODO: Link.
+        Brandon Scanlon\\ % TODO: Link.
+        \href{https://oliveryasuna.github.io/}{Oliver Yasuna}
+    \par}
+    \vspace{1cm}
+    {\large\scshape Advisor} \\[\baselineskip]
+    {\Large \href{https://www.wpi.edu/people/staff/lostapowiczcritz}{Lori Ostapowicz-Critz}\par}
+    \vfill
+    {\itshape October 2021\par} % TODO: Update.
+\end{titlepage}
 
 \frontmatter
     \tableofcontents
@@ -25,14 +49,16 @@
     \chapter{Glossary}
         \input{chapters/glossary/glossary}
 
-\mainmatter%{
+\mainmatter
     \chapter{Introduction}
         \input{chapters/introduction/introduction}
-    \chapter{Research}
+    \chapter{Literature Review}
         \input{chapters/research/research}
-    \chapter{Project Strategy}
-        \input{chapters/project-strategy/MAIN-project-strategy}
     \chapter{Timeline}
         \input{chapters/timeline/timeline}
+
+\settocbibname{References}
+\bibliographystyle{apacite}
+\bibliography{references}
 
 \end{document}
