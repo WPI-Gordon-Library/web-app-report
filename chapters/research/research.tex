@@ -1,14 +1,24 @@
-\section{Significance of the Topic}
+\section{Introduction}
+\paragraph{}
+The overall use of handheld devices has undoubtedly increased astronomically within the past decade or so. Various resources and connecting with others around the world has been made easily accessible to those with such devices. To a great extent, this eliminates the factor of distance for such individuals. As it is evident, the past nearly two years have forced us into an era and lifestyle of isolation. COVID-19's impacts on everyone has pushed apart families, friends, and colleagues making it quite difficult to stay connected, especially in person. The internet, social media, Facetime, Zoom, and numerous other mobile applications and websites have all aided our world with the capability to stay connected with each other, but separately. As we continue through this period of seclusion, many advancements for staying connected have blossomed. Zoom Video Communications, used to host virtual meetings for any occasion, for example, has skyrocketed in its usage. At Worcester Polytechnic Institute, the same ideals hold true. So, we took on the challenge to join this movement and develop a mobile application tailored to the utilization of the George C. Gordon Library's many resources. In doing so, like the other platforms mention previously, it would allow users to connect to the library's resources remotely and follow local COVID-19 guidelines with the additional provided information about the library and its in-person availabilities within the app.
 
+
+\section{Significance of the Topic}
+\paragraph{}
+ Our world is becoming more and more reliant on devices such as our mobile phones. These mobile devices unlock a connection between the user and a vast and seemingly endless supply of helpful and sometimes not so helpful resources. With this in mind, this connective architecture "serves as a virtual platform for learners to engage with their learning activities in a more spontaneous, personal, informal, contextual, portable, ubiquitous and pervasive way" \cite{Mobile_Apps_Between_Hong_Kong_and_Japan}, as \textit{Adoption of mobile library apps as learning tools in higher education: a tale between Hong Kong and Japan} explains. Mobile applications have become and are continuing to be greatly utilized in the academic world on all levels. From children to college graduate students, technology aids each one to some extent, broadening their learning capabilities and resources.
+
+\paragraph{}
+ In the article \textit{Undergraduate students use of mobile apps to search library catalogs} Shih-chuan Chen states that "Many libraries provide mobile app services because of the rapid increase in smartphone users" \cite{undergrad_ma}. He also goes on to note how many elementary tasks can be accomplished more efficiently on a mobile device than on a computer, however, the opposite is true for tasks 
+
+\paragraph{}
+ 
     \begin{itemize}
         \item
-        "Mobile devices, such as smartphones and tablets, have become increasingly important in ourdaily life. These mobile devices with wireless technologies are also playing an important rolein teaching and learning (Gikas and Grant, 2013), as they serve as a virtual platform forlearners to engage with their learning activities in a more spontaneous, personal, informal,contextual, portable, ubiquitous and pervasive way. These unique characteristics andconvenience brought by mobile technologies serve as a bridge between the formal and informal learning, as learning has become an integral part of students’daily activities(Kukulska-Hulme and Traxler, 2005)." \cite{Mobile_Apps_Between_Hong_Kong_and_Japan}
-        \item
-        Almost everyone today uses a smartphone. Smartphone users are especially common in younger individuals, ergo college students. I can barely walk across campus without avoiding at least one person staring at their phone, ignoring the world around them. "Many libraries provide mobile app services because of the rapid increase in smartphone users" \cite{undergrad_ma}. Simple tasks can be completed quicker on a smartphone, rather than a laptop or desktop device. "Although more search tasks were completed using the laptop, participants could complete most tasks when using the mobile app and required less time to do so" \cite{undergrad_ma}. So, if we are to implement specific features in such a way that the user experience is quick and satisfying, we could remove some need for physical attendance to the library.
+        Simple tasks can be completed quicker on a smartphone, rather than a laptop or desktop device. "Although more search tasks were completed using the laptop, participants could complete most tasks when using the mobile app and required less time to do so" \cite{undergrad_ma}. So, if we are to implement specific features in such a way that the user experience is quick and satisfying, we could remove some need for physical attendance to the library.
         \item
         We live in a world where convenience is key. People expect answers to all of their queries, and expect these results instantaneously. This makes sense as "technologies have made communication and access to information very convenient and timely to the users from the comfort of their own home and office" \cite{mob_ph_app_aca_lib}. Therefore, the same paradigm can and should be applied to library applications.
         \item
-        Recently, smart phones with iPhone in the lead experience a huge popularity and the number of smartphones in the market has increased considerably. The reason behind this popularity is the plurality of useful and fancy applications [6], also called Apps. Although apps may have the same functionality there are many ways of implementing them such JavaScript, HTML5, applets,widgets, etc. Seen from the developers, users and service providers it is both interesting and relevant to understand the differences in terms of architecture, underlying mechanisms and functionality. Further, it is crucial in the development and selection of mobile apps to know which paradigm is more suitable for a given type of applications or usage. This paper is aiming at shedding light on the current most popular mobile app paradigms and providing a fundament for appropriate selection of mobile app paradigms. The paper starts with reviewing the related works. Next, the different mobile app paradigms are explained in a comprehensive way. The core of the paper is the evaluation of the existing mobile app paradigms. To verify the evaluation a practical implementation is carried out. A mobile object recognition/visual search app is chosen and is developed using the two most promising paradigms, namely native app and HTML5 mobile app. Evaluation results are also thoroughly discussed. \cite{Mobile_App_Paradigms}
+        Recently, smart phones with iPhone in the lead experience a huge popularity and the number of smartphones in the market has increased considerably. The reason behind this popularity is the plurality of useful and fancy applications [6], also called Apps. Although apps may have the same functionality there are many ways of implementing them such JavaScript, HTML5, applets, widgets, etc. Seen from the developers, users and service providers it is both interesting and relevant to understand the differences in terms of architecture, underlying mechanisms and functionality. Further, it is crucial in the development and selection of mobile apps to know which paradigm is more suitable for a given type of applications or usage. This paper is aiming at shedding light on the current most popular mobile app paradigms and providing a fundament for appropriate selection of mobile app paradigms. The paper starts with reviewing the related works. Next, the different mobile app paradigms are explained in a comprehensive way. The core of the paper is the evaluation of the existing mobile app paradigms. To verify the evaluation a practical implementation is carried out. A mobile object recognition/visual search app is chosen and is developed using the two most promising paradigms, namely native app and HTML5 mobile app. Evaluation results are also thoroughly discussed. \cite{Mobile_App_Paradigms}
         \item
         A mobile native application or native app is an application specifically developed to execute on a specific device platform[7] and machine firmware, and cannot be used for other device platform without modifications. For example, apps developed for the iPhone run only on Apple devices. A native app could be a stand-alone app running on the mobile phone or consisting of a main component on the mobile phone communicating with network servers. To use native apps users must download them from app store and install them manually on their phones.\cite{Mobile_App_Paradigms}
         \item
@@ -89,9 +99,15 @@
    
 
 \section{Known and Unknowns}
+
+    \paragraph{}
+    Any experienced programmer can effortlessly throw together a quick application, but developing a user-facing application that people will want to use is entirely another beast. Consider the days of terminals, when all users interacted with was text. For a user to be successful, they must learn the commands and understand how to read output. Nowadays, users are not trained this way and rather expect stylish user interfaces for which to work with. Unlike on a desktop environment, mobile devices have physically a small amount of real estate. So, to develop a mobile application, one programmer may not be enough.
+    
+    A development team requires more resources, such as designers for the look-and-feel of a mobile application. This is no different for the development of a mobile library application. "The adoption of mobile apps as an emerging format within the Libraries’ collections necessitates a varied outreach strategy that endeavors to make apps accessible and approachable" \cite{saragossi_costello_kasten_2018}. So, how does one design and implement an accessible and approachable mobile application? Through research. This research includes, but is not limited to, research such as what we have done for this project, and surveys. It may be easier "achieved through hands-on workshops or the creation of robust resources for online users" \cite{saragossi_costello_kasten_2018}. This is why we designed a survey and surveyed students. By listening to what students want to see in a mobile library application, we know what features to prioritize and implement.
+    
+    Not every user is tech-savvy. For those who are not, workshops may be a solution. "The tutorials will provide narration and visual step-by-step instructions about the download process for subscribed mobile applications" \cite{saragossi_costello_kasten_2018}. A user needs help downloading and installation the mobile library application to their own mobile device. For that, a workshop and tutorials will help them.
+
     \begin{itemize}
-        \item
-        It may be easy to throw together a quick application, but developing an app that people want to use is another beast entirely. "The adoption of mobile apps as an emerging format within the Libraries’ collections necessitates a varied outreach strategy that endeavors to make apps accessible and approachable" \cite{saragossi_costello_kasten_2018}. It may be easier "achieved through hands-on workshops or the creation of robust resources for online users" \cite{saragossi_costello_kasten_2018}. This is why designed and surveyed students and faculty.
         
         \item 
         Techniques ranging from the manual inspection to
@@ -115,7 +131,7 @@
     \begin{figure}[H]
         \centering
         \includegraphics[width = \textwidth, height = \textheight, keepaspectratio]{assets/img/accessing_mobile_application_components_table_1.png}
-        \caption{Frequency and percentage of components in library mobile applications by type of library \cite{mansouri_soleymani_asl_2019}}
+        \caption{Frequency and percentage of components in library mobile applications by type of library \protect\citeA{mansouri_soleymani_asl_2019}}
         \label{fig:freq_and_per_comp_lib_mob_app}
     \end{figure}
     \paragraph{}
@@ -147,12 +163,16 @@
     
     
 \section{State of the Art}
-    \begin{itemize}
     \paragraph{}
-    Throughout the years, app development has improved in both efficiency, quality, and accessibility. As a result, library apps - as well as similar learning-based apps - have improved in these criteria congruently. One feature of modern day mobile applications is an emphasis integration with other relevant software. For example, in reference to the Libris CampusM Mobile App, an article writes: "The flexibility of the app enables it to be integrated with learning management systems such as Blackboard®, Canvas, and Moodle™" \cite{campusM}. 
+    Throughout the years, app development has improved in both efficiency, quality, and accessibility. As a result, library apps - as well as similar learning-based apps - have improved in these criteria congruently. One feature of modern day mobile applications is an emphasis integration with other relevant software. For example, in reference to the Libris CampusM Mobile App, an article writes: "The flexibility of the app enables it to be integrated with learning management systems such as Blackboard®, Canvas, and Moodle™"\cite{campusM}. This cross-platform paradigm is quintessential in applications which were build to service existing technologies. State of the art library mobile applications then, integrate with existing programs and databses. One papers describes the origins of a library mobile app; "A number of libraries gradually sensed this trend and combined their services with mobile technology to created so-called Mobile Library or M-Library." \cite{design_and_impl}
+    \paragraph{}
+    In addition to be highly integrated with existing technology, state of the art mobile applications utilize technologies built into smartphones in order give users the best possible experience. One papers states, "The behavior of smartphone apps is driven by input from sensors such as GPS, microphone, or camera"  \cite{}. State of the art library applications utilize the technology provided by mobile phones in order to maximize their utility. For example, a library app might use the camera in order to scan bar codes. Furthermore, a library application could utilize the GPA technology to inform users with their distance from the library. Essentially, state of the art apps, including library apps, utilize the state of the art technology features on smartphones.
+    \paragraph{}
+    Another feature of modern technology, particularly software, is change. State of the art application are dynamic entities; they improve with time and require consistent maintenance. One author writes, "Thus, to keep the software and its data safe, software developers perform continuous testing of the product in its operational phase and release software upgrades or software updates/patches to fix any uprising issue and to improve it.\cite{Reliability_modeling}.  Essentially, state of the art software, mobile applications specifically, including library applications, are upgraded, maintained and modified on a regular basis. 
     
-    \paragraph{}
-    \paragraph{}
+    %%List here is just for information purposes. Text above is the actual thang
+    \begin{itemize}
+    
         \item
         "The flexibility of the app enables it to be integrated with learning management systems such as Blackboard®, Canvas, and Moodle™" \cite{campusM}
         \item
@@ -195,19 +215,6 @@
         \item
         Found in a study by a team from San Agustin University's Computer Science department in Peru, and among 163 surveyed students, those students mostly utilize academic apps that assist in making their academic workload easier and more efficient to handle. These such apps include: GeoGebra, Mathway, Kahn Academy, Duolingo, Symbolab, and numerous others. As we delve into the concept of creating a more ease of access system for academic resources here at WPI, this study shows just what students are wanting from mobile apps, convenience.\cite {Educational_Apps}
     \end{itemize}
-    
-    
-    
-\section{Additional Mobile Academic Library App Research}
-        \subsection{Harvard University}
-            \paragraph{}
-            Harvard's library app, Harvard Library, featured a minimalist home screen with the school logo in the upper-right hand corner, a help button in the lower-left, a 'login' feature in the lower right, and a circular 'start' button in the center. The screen featured only three colors; white, black and crimson red. Clicking the 'start' button pulled up the same login screen that clicking the 'login' button pulled up.  Unfortunately, we were not able to further explore this mobile app because we do not have account affiliated with the University.
-        \subsection{Salisbury}
-            \paragraph{}
-            Sailsbury Universitie's Library app, SU Libraries, featured a noticeably less minimalist design than Harvard's, and had a more unrefined look.  Fortunately, we were able to access the applications features, however. The home screen included a search bar, and nine features: "Library Hours", "Research Help", "Room Reservations", "Self Checkout", "SU Libraries MakerLab", "Device Availability", "Building Maps", "Helpful Links" and "Contact Information". It also contained a bar at the bottom with five navigation options: "Home", "Library News", "Chat", "My Card" and "About". Additionally, there was a link to the libraries social media accounts.
-            \paragraph{}
-            The "Library Hours" feature lead to a screen with minimal interactivity. The screen contained the opening and closing times for all days from the current day to approximately three months in advance. The "Research Help" feature took the user to a page with a somewhat similar layout; a page in which you could scroll downward, containing the subjects in which you could get research help. This page, however, was interactive. The user could click on each subject option, taking them to a page with information about who to contact, and how to contact them, if they are seeking research help in that specific area.  The "Study Room Reservations" feature as well as the "Devise Availability" feature has a similar layout to these two.
-            \paragraph{}
-            The "Building Maps" feature lead to a page containing the layout of each floor of the building. The only interactivity on this page was the option to click on any of the diagrams for an enlarged view of the diagram. 
-            \paragraph{}
-            The "SU Libraries MakerLab" feature took the user to a page which seemed functioned like an app in and of itself. The page it took the user to contained a variety of features relating to the Maker Lab. Such as a feature displaying the time its open for today as well as a feature displaying which days it is open. It also had a feature containing taking the user to a page with the Maker Lab policies, a feature allowing users to make an appointment in the maker space, and finally the contact information for the maker space. 
+    \section{Closing Thoughts}
+    \paragraph{}
+    \TODO

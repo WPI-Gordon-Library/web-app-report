@@ -1,11 +1,15 @@
 \documentclass[oneside, 12pt]{book}
+\newcommand{\sectionbreak}{\clearpage}
 
+\usepackage{setspace}
 \input{packages/packages-test} % TODO: Remove testing packages.
 \input{packages/packages}
+
 
 \input{page-style}
 
 \input{constants}
+\doublespacing
 
 % Document info.
 %\title{Mobile App Development For The WPI Gordon Library}
@@ -52,13 +56,18 @@
 \mainmatter
     \chapter{Introduction}
         \input{chapters/introduction/introduction}
+        
     \chapter{Literature Review}
-        \input{chapters/research/research}
-    \chapter{Timeline}
-        \input{chapters/timeline/timeline}
+    \input{chapters/research/research}
+    
+    \chapter{Appendix}\addcontentsline{toc}{chapter}{Appendix}
+        \section{Timeline}\addcontentsline{toc}{section}{Timeline}
+        \input{chapters/appendix/timeline/timeline}
+        \input{chapters/appendix/Additional Research/Additional Research}
+            
 
-\settocbibname{References}
-\bibliographystyle{apacite}
-\bibliography{references}
+    \settocbibname{References}
+    \bibliographystyle{apacite}
+    \bibliography{references}
 
 \end{document}
