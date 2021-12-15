@@ -11,6 +11,13 @@
 \input{constants}
 \doublespacing
 
+
+
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\color{gray}\bullet$}
+\renewcommand{\labelitemiii}{$\circ$}
+\renewcommand{\labelitemiv}{\tiny\blacksquare$}
+
 % Document info.
 %\title{Mobile App Development For The WPI Gordon Library}
 %\author{John Muirhead, Brandon Scanlon, Oliver Yasuna}
@@ -57,8 +64,17 @@
     \chapter{Introduction}
         \input{chapters/introduction/introduction}
         
-    \chapter{Literature Review}
-    \input{chapters/research/research}
+    \chapter{Literature Review}\addcontentsline{toc}{chapter}{Literature Review}
+        \input{chapters/research/research}
+    
+    \chapter{Methodology}\addcontentsline{toc}{chapter}{Methodology}
+        \input{chapters/Methodology/methodology}
+        
+    \chapter{Results}\addcontentsline{toc}{chapter}{Results}
+        \input{chapters/Results/results}
+            
+    \chapter{Conclusion}\addcontentsline{toc}{chapter}{Conclusion}
+        \input{chapters/Conclusion and Recommendations/conclusion and recommendations}
     
     \chapter{Appendix}\addcontentsline{toc}{chapter}{Appendix}
         \section{Timeline}\addcontentsline{toc}{section}{Timeline}
