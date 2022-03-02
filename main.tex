@@ -1,6 +1,7 @@
 \documentclass[oneside, 12pt]{book}
 \newcommand{\sectionbreak}{\clearpage}
 
+
 \usepackage{setspace}
 \input{packages/packages-test} % TODO: Remove testing packages.
 \input{packages/packages}
@@ -13,6 +14,7 @@
 
 
 
+\usepackage{multicol}
 \renewcommand{\labelitemi}{$\bullet$}
 \renewcommand{\labelitemii}{$\color{gray}\bullet$}
 \renewcommand{\labelitemiii}{$\circ$}
@@ -24,66 +26,181 @@
 %\date{October 2021} % TODO: Update.
 
 \begin{document}
+\renewcommand{\BRetrievedFrom}{}
 
 %\maketitle
+% \begin{titlepage}
+%     \centering
+%     {\LARGE\scshape \href{https://www.wpi.edu/}{Worcester Polytechnic Institute}\par}
+%     \vspace*{1.2cm}
+%     \href{https://www.wpi.edu/}{\includegraphics[]{assets/img/150px-WPI_logo.png}}\\
+%     \vspace*{2cm}
+%     \rule{\textwidth}{1pt}\\
+%     \vspace{0.5cm}
+%     {\huge\bfseries Mobile App Development for the WPI Gordon Library\par} % TODO: Link to Digital WPI.
+%     \vspace{0.5cm}
+%     \rule{\textwidth}{1pt}\\
+%     \vspace{2cm}
+%     {\large\scshape Participants} \\[\baselineskip]
+%     {\Large
+%         John Muirhead\\ % TODO: Link.
+%         \href{https://www.linkedin.com/in/brandon-scanlon/}{Brandon Scanlon}
+%         \href{https://oliveryasuna.github.io/}{Oliver Yasuna}
+%     \par}
+%     \vspace{1cm}
+%     {\large\scshape Advisor} \\[\baselineskip]
+%     {\Large \href{https://www.wpi.edu/people/staff/lostapowiczcritz}{Lori Ostapowicz-Critz}\par}
+%     \vfill
+%     {\itshape October 2021\par} % TODO: Update.
+% \end{titlepage}
 \begin{titlepage}
     \centering
-    {\LARGE\scshape \href{https://www.wpi.edu/}{Worcester Polytechnic Institute}\par}
-    \vspace*{1.2cm}
     \href{https://www.wpi.edu/}{\includegraphics[]{assets/img/150px-WPI_logo.png}}\\
     \vspace*{2cm}
     \rule{\textwidth}{1pt}\\
-    \vspace{0.5cm}
-    {\huge\bfseries Mobile App Development for the WPI Gordon Library\par} % TODO: Link to Digital WPI.
-    \vspace{0.5cm}
+    \vspace{0.1cm}
+    {\Large\bfseries Mobile App Development for the WPI Gordon Library\par} % TODO: Link to Digital WPI.
+    \vspace{0.1cm}
     \rule{\textwidth}{1pt}\\
-    \vspace{2cm}
-    {\large\scshape Participants} \\[\baselineskip]
-    {\Large
-        John Muirhead\\ % TODO: Link.
-        Brandon Scanlon\\ % TODO: Link.
-        \href{https://oliveryasuna.github.io/}{Oliver Yasuna}
-    \par}
-    \vspace{1cm}
-    {\large\scshape Advisor} \\[\baselineskip]
-    {\Large \href{https://www.wpi.edu/people/staff/lostapowiczcritz}{Lori Ostapowicz-Critz}\par}
+    {An Interactive Qualifying Project submitted to the Faculty of WORCESTER POLYTECHNIC INSTITUTE in partial fulfillment of the requirements for the Degree of Bachelor of Science.}
+    \vspace{1cm}\\
+    \begin{tabular}{c@{\hspace{5em}}c}
+        {\large\scshape Participants} & {\large\scshape Advisors}\\
+        \\
+        Muirhead, John & Ostapowicz-Critz, Lori\\
+        Scanlon, Brandon\\
+        Yasuna, Oliver
+    \end{tabular}
+    
     \vfill
-    {\itshape October 2021\par} % TODO: Update.
+%     \begin{multicols*}{2}
+%         {\large\scshape Participants\\}
+%         \vspace{0.5cm}
+%         {\Large Muirhead, John\\} \vspace{0.2cm}
+%         {\Large Scanlon, Brandon\\} \vspace{0.2cm}
+%         {\Large \href{https://oliveryasuna.github.io/}{Yasuna, Oliver}\\}
+%         \vfill
+%         \vspace{4cm} % Force "Advisors" into the next column.
+%         {\large\scshape Advisors\\}
+%         \vspace{0.5cm}
+%         {\Large \href{https://www.wpi.edu/people/staff/lostapowiczcritz}{Ostapowicz-Critz, Lori}\\}
+%   \end{multicols*}
+  Date: March 2022\\
+  \vspace{0.5cm}
+  \textit{This report represents work of one or more WPI undergraduate students submitted to the faculty as evidence of a degree requirement. WPI routinely publishes these reports on its web site without editorial or peer review.}
 \end{titlepage}
 
 \frontmatter
     \tableofcontents
-    \chapter{Abstract}
+    \chapter{i. Abstract}
         \input{chapters/abstract/abstract}
-    \chapter{Acknowledgements}
+    \chapter{ii. Acknowledgements}
         \input{chapters/acknowledgements/acknowledgements}
-    \chapter{Glossary}
+    \chapter{iii. Glossary}
         \input{chapters/glossary/glossary}
+%---------------------------------------------------------------------------------------------------------------------------------------------------------
+\chapter{iv. Authorship}
 
+\begin{table}[ht]
+\scalebox{.85}{
+\hspace{-0.5in}
+\begin{tabular}{| l | l | l | l |}
+
+ \hline
+ 
+ \underline{\textbf{Section}} &  \underline{\textbf{Writer(s)}} &  \underline{\textbf{Editor(s)}}\\\hline \hline
+
+ \textbf{i. Abstract} &  \textbf{} &  \textbf{} \\ \hline \hline
+ 
+ \textbf{ii. Acknowledgments} &  \textbf{} &  \textbf{} \\ \hline \hline
+ 
+ \textbf{iii. Glossary} &  \textbf{} &  \textbf{} \\ \hline \hline
+
+ \textbf{iv. Authorship} &  \textbf{Brandon Scanlon} &  \textbf{All} \\ \hline \hline
+ 
+ \textbf{1. Introduction} &  \textbf{Oliver Yasuna} &  \textbf{Brandon Scanlon} \\ \hline \hline
+
+ \textbf{2. Literature Review} &  \textbf{All} &  \textbf{All} \\ \hline
+  2.1 Introduction & Brandon Scanlon & Brandon Scanlon \\ \hline
+  2.2 Significance of Topic & Brandon Scanlon & Brandon Scanlon \\ \hline
+  2.3 Known and Unknowns & Oliver Yasuna & Brandon Scanlon \\ \hline
+  2.4 Current Models in This Field of Study & Oliver Yasuna & Brandon Scanlon \\ \hline
+  2.5 State of the Art & John Muirhead & John Muirhead \\ \hline
+  2.6 Relation to the Larger Problem Area & John Muirhead & John Muirhead \\ \hline
+  2.7 Closing Thoughts & All & Brandon Scanlon, (*ADD*) \\ \hline \hline
+
+ \textbf{3. Methodology} &  \textbf{All} &  \textbf{All} \\ \hline
+  3.1 Introduction & John Muirhead & John Muirhead \\ \hline
+  3.2 Needs Analysis & Brandon Scanlon & Brandon Scanlon \\ \hline
+  3.3 Functions (Specification) & Brandon Scanlon & Brandon Scanlon \\ \hline
+  3.4 Conceptual Designs & Brandon Scanlon & Brandon Scanlon \\ \hline
+  3.5 Preliminary / Alternative Designs & Oliver Yasuna & Brandon Scanlon \\ \hline
+  3.6 Feasibility Study & Oliver Yasuna &  \\ \hline
+  3.7 Modeling & Oliver Yasuna &  \\ \hline
+  3.8 Preliminary Findings / Outcomes & John Muirhead &  \\ \hline
+  3.9 Final Design Strategy & John Muirhead &  \\ \hline
+  3.10 Techniques for Deployment & John Muirhead &  \\ \hline \hline
+ 
+  \textbf{4. Results} &  \textbf{Brandon Scanlon, Oliver Yasuna} &  \textbf{Brandon Scanlon, Oliver Yasuna} \\ \hline
+  4.1 Introduction & Oliver Yasuna & Oliver Yasuna \\ \hline
+  4.2 Student Survey & Brandon Scanlon & Brandon Scanlon \\ \hline
+  4.3 Technical & Oliver Yasuna & Oliver Yasuna \\ \hline \hline
+  
+  \textbf{5. Conclusion} &  \textbf{} &  \textbf{} \\ \hline
+  
+  \hline \hline
+  
+  \textbf{6. Recommendations} &  \textbf{} &  \textbf{} \\ \hline
+  
+  \hline \hline
+  
+  \textbf{7. Appendix} &  \textbf{Brandon Scanlon, John Muirhead} &  \textbf{Brandon Scanlon, John Muirhead} \\ \hline
+  7.1 Timeline & Brandon Scanlon & Brandon Scanlon \\ \hline
+  7.2 Additional App Research & John Muirhead & John Muirhead \\ \hline
+  7.3 Academic Library Features & Brandon Scanlon & Brandon Scanlon \\ \hline
+  7.4 Student Survey & Brandon Scanlon & Brandon Scanlon \\ \hline
+  7.5 Survey Results & Brandon Scanlon & Brandon Scanlon \\ \hline \hline
+  
+\textbf{References} &  \textbf{All} &  \textbf{John Muirhead} \\ \hline
+  
+\hline
+\end{tabular}
+}
+\end{table}
+%---------------------------------------------------------------------------------------------------------------------------------------------------------
 \mainmatter
     \chapter{Introduction}
-        \input{chapters/introduction/introduction}
+        \input{chapters/1.) introduction/introduction}
         
-    \chapter{Literature Review}\addcontentsline{toc}{chapter}{Literature Review}
-        \input{chapters/research/research}
+    \chapter{Literature Review}\label{ch:lit_rev}\addcontentsline{toc}{chapter}{Literature Review}
+        \input{chapters/2.) Literature Review/research}
     
     \chapter{Methodology}\addcontentsline{toc}{chapter}{Methodology}
-        \input{chapters/Methodology/methodology}
+        \input{chapters/3.) Methodology/methodology}
         
     \chapter{Results}\addcontentsline{toc}{chapter}{Results}
-        \input{chapters/Results/results}
+        \input{chapters/4.) Results/results}
             
     \chapter{Conclusion}\addcontentsline{toc}{chapter}{Conclusion}
-        \input{chapters/Conclusion and Recommendations/conclusion and recommendations}
+        \input{chapters/5.) Conclusion and Recommendations/conclusion and recommendations}
+            
+    \chapter{Recommendations}\addcontentsline{toc}{chapter}{Recommendations}
+        \input{chapters/5.) Conclusion and Recommendations/recommendations}
+    
+    %  \settocbibname{References}
+    % \bibliographystyle{apacite}
+    % \bibliography{references}
+    \chapter{Bibliography}\addcontentsline{toc}{chapter}{Bibliography}
+        \input{chapters/6.) References/regerences}
+    
     
     \chapter{Appendix}\addcontentsline{toc}{chapter}{Appendix}
         \section{Timeline}\addcontentsline{toc}{section}{Timeline}
-        \input{chapters/appendix/timeline/timeline}
-        \input{chapters/appendix/Additional Research/Additional Research}
-            
+        \input{chapters/7.) Appendix/7.1) Timeline/timeline}
+        \input{chapters/7.) Appendix/7.2) Additional Research/Additional Research}
+        \input{chapters/7.) Appendix/7.3) Supplementary Materials/Supplementary Materials}
+        \input{chapters/7.) Appendix/7.4) Student Survey/Survey 1}
+        \input{chapters/7.) Appendix/7.5) Survey Results/Survey Results}
 
-    \settocbibname{References}
-    \bibliographystyle{apacite}
-    \bibliography{references}
-
+   
 \end{document}

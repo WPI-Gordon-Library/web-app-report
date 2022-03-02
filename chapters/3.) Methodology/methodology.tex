@@ -1,0 +1,199 @@
+%section 3.1 - INTRODUCTION
+
+    \section{Introduction}
+    
+    \paragraph{}
+    In this section, we discuss how we went about developing the app. including the ideation for the applications features or the process by which we decided which features would be implemented in the applications. The technical aspects of the development process are also provided. Furthermore, describe the methods in which we got relevant data for the app - data for the initial design and data for subsequent improvements.
+    
+    \paragraph{}
+    The approach to produce a final product was a simple one. We identified our goal: create a mobile app that provides WPI students with some sort of value. Next we listed linear steps and tasks necessary to reach this goal.  were able to assign these processes to individuals and then brainstorm how we would accomplish each one.
+
+
+%----------------------------------------------------------------------------------------------------------------------------------------------------
+
+%Section 3.2 -- INITIAL REVISIONS MADE
+    \section{Needs Analysis}
+% Needs Analysis is a formal, systematic process of identifying and evaluating training that should be done, or specific needs of an individual or group of employees, customers, suppliers, etc. Needs are often referred to as “gaps,” or the difference between what is currently done and what should be performed.
+    \paragraph{}
+    In order to develop a mobile library application from start to finish, many variables must be considered in advance. We began by determining the exact resources the Gordon Library supplies and which of them would be worth implementing into our application. Additionally, we thought of other resources perhaps outside of the library's scope that may aid our future users in their academic endeavors. We devised a campus-wide survey for WPI students with the aid of Google Forms that demonstrated which library services they actually used and, of those, which resources should be implemented into our mobile application for the library. This survey was comprised of a series of optional questions that not only gauged utilization of each of the library's resources and also the demographic, user interface preferences related to other mobile applications, as well as, the option to volunteer for application testing later on (See Appendix 6.5 for the detailed survey used). 
+    \paragraph{}
+    For the actual development of the mobile application, we employed Java, a widely-utilized programming language that handles the backend development or more simply, the code that lives "under the hood" and JavaScript, a scripting language which dealt with the frontend aspects which directly controls what is immediately seen by the user. These tools allowed us to fully develop our goal of a mobile application for the Gordon Library at WPI.
+
+    \paragraph{}
+    In the background of our project's iterative process, we determined that the use of Jira and Confluence by Atlassian - two pieces of software that aid in project management - would be a great utility for organizing our tasks and goals throughout the three-term project. After we gained the requisite fluency with these utilities, both Jira and Confluence were utilized for every aspect of the project. Jira enabled our team to keep track of our deliverables and goals as defined as tickets in the software, which lived sprint to sprint (week to week), keeping us on track and organized. Confluence, on the other hand, provided us the capability to create and organize notes and documentation throughout the project's duration. With this fluency, tasks were distributed evenly, project efficiency increased, and all the tasks could be tracked for later reference as needed in our results.
+    \newpage
+    
+%----------------------------------------------------------------------------------------------------------------------------------------------------
+    
+%Section 3.3 -- INITIAL REVISIONS MADE
+   % "What we are using to create the app and how"
+   \section{Functions (Specifications)}
+    \paragraph{}
+    Creation of the library mobile application required the following items:
+    \begin{itemize}
+        \item Integrated Development Environment (IDE) - Where a given programming language lives and the development of code exists. In our case, we used IntelliJ as the IDE to house our project's code in which multiple programming languages and frameworks are used.
+        
+        \item Programming Languages - Coding languages that allow for writing code. A programming language, when approaching a software-based project, is determined based on what is to be accomplished and in our case, what language each member of the team was most comfortable with. For the frontend development, and to allow for a pleasant layout and user interface for our mobile application, JavaScript, HTML, and Sass/SCSS were chosen as the scripting languages to best provide the capabilities and interface we sought for our mobile app. For the backend development, the language chosen was Java, as it turned out that each member of the team was most comfortable with Java. This language pertains to and handles all the "under-the-hood" code. Using these languages, buttons can have mapped functionalities, API consumers can be built and later displayed, etc. 
+        
+        \item Programming Frameworks - Frameworks are essentially reusable software environments which can be used for numerous different applications and enable one or many functionalities for the main program. Some of the frontend frameworks/libraries we used were Lit, Polymer, and Vaadin. These three frameworks/libraries not only provided us with additional functions for our primary program, they also simplified larger functions for implementation. Lit is a library that helps make the process of building web components fast and efficient. The Polymer library makes the process of creating custom elements easier. Vaadin, a Java web application development framework, supports the creation and maintenance of web-based user interfaces of high quality more simplistic. For the backend frameworks, Spring, Hibernate ORM, Logback, and Lombok were used. Spring, an open-source application framework, supports the development of Java-based applications. Hibernate ORM works in conjunction with SQL and handles the mapping of object-oriented domain models to a relational database. Logback is a logging framework that deals with data logging within Java. Lombok is a Java library that enhances the programming experience by automating certain trivial yet repetitive tasks.
+    \end{itemize}
+    \newpage
+    
+%-------------------------------------------------------------------------------------------------------------------------------------------------
+    
+    %Section 3.4 -- INITIAL REVISIONS MADE
+    \section{Conceptual Designs}
+    \paragraph{}
+    In the adolescent stages of development, we aimed to design a mobile application that conformed to WPI standards. Our advisor explained that the WPI Marketing Communications department handles the look-and-feel standards. Therefore, we contacted the department and were provided with vector graphics of the WPI logo and more, and the standards for user interface components such as buttons, text fields, headers, etc. We were ready to begin wireframing.
+    \paragraph{}
+    Numerous designs for our mobile application were considered. These designs were discussed in detail, however, we later mapped our ideas to a concrete design with the use of the software Figma. Figma provides many capabilities to create conceptual designs that emulate a prototype or even a final product. With Figma, we were able to get a sense of the look and feel, or user interface, of what we wanted for our mobile application. The designs we produced are discussed later in our technical results.
+    \paragraph{}
+    Our first approach to implement the mobile application in code was through a framework called "Vaadin." In parallel, and after we had tinkered with Figma wireframing, Oliver developed a style sheet and suite of reusable user interface components for the Vaadin framework that conformed to WPI's standards. This is discussed in detail in our technical results section.
+    \newpage
+    
+%-------------------------------------------------------------------------------------------------------------------------------------------------
+    
+     %Section 3.5 -- INITIAL REVISIONS MADE
+    \section{Preliminary / Alternative Designs}
+        \paragraph{}
+         Due to initial limitations, there was no precedent for what we were building - our application would be unique. Common library application features would not be included in our application:
+        \begin{itemize}
+            \item Catalog search.
+            \item Book availability \& checkout.
+            \item E-books.
+            \item Audio books.
+        \end{itemize}
+        \paragraph{}
+         We discussed many features that would be feasible to implement in our three-term timeframe:
+        \begin{itemize}
+            \item Library hours.
+            \item Tech Suite booking.
+            \item Occupancy count.
+            \item News \& events.
+            \item Library chat.
+        \end{itemize}
+        Based on the results of the student survey and our research on features that are prevalent in other mobile library applications, Tech Suite booking and occupancy count were selected as the most critical components of the application. No precedent exists for these features, so the team needed to not only program, but to also develop them. Develop, in the sense that we had to design these features prior to implementation.
+    \newpage
+    
+%----------------------------------------------------------------------------------------------------------------------------------------------------
+    
+     %Section 3.6
+    \section{Feasibility Study}
+    % "The primary objective of this is to present a feasibility study scheme that enables system analysts to verify the preliminary essentials established by the idea innovator and to generate other genuine user’s requirements.” <How Feasible Analysis Is Essential For Mobile App Success?> - seems like this is integrated into your iterative process, right?"
+        \subsubsection{Technical Feasibility}
+           % \paragraph{}
+           % By luck, all student team members were Computer Science majors with some form of history of software development. Some members had more experience than others, but everyone could bring something to the table. With our experience, we were familiar with the various tool for development and from the start, knew what we would use.
+            \paragraph{}
+            Our application required a backend, meaning a server for hosting our mobile application. WPI has access to various servers as well as Amazon Web Services, so our hosting options were sufficient.
+        \subsubsection{Legal Feasibility}
+            \paragraph{}
+            We, the student team members, operated under the guidelines set forth by WPI and our IQP advisor.
+        \subsubsection{Economic Feasibility}
+            \paragraph{}
+             The application we proposed had no serious economic implications. Usually, an application of this magnitude costs hundreds, often thousands, of dollars. Our method for addressing this was systematic. We listed everything which would require some degree of funding, with the associated price. If it was a subscription we determined the cost for  the duration of the project. We then ranked all of these features from most important to least important. We discarded the unimportant expensive items and tried to obtain funding for the more-important cheaper things. Some of this funding was obtained through third-party sources, some we paid for out of pocket. 
+            %  At first, we thought we would need some paid tools, but eventually discovered alternatives. Quite frankly, the economics worked well for WPI. Given the developers were students, the work was free for the school. In fact, because students pay to attend, and therefore pay to participate in an IQP, which leads to a degree, there exists a mutual relationship beneficial to all.
+        \subsubsection{Operational Feasibility}
+            \paragraph{}
+            % WPI has offered Interactive Qualifying Projects for over 40 years, so there exists a strong foundation on which to operate projects such as ours. From a 9-page syllabus, to a 13-page report writing guidelines and templates, there was no reason to think that this project would be unfeasible from an operational perspective.
+            Operational feasibility is the measure of how well solutions proposed match the problem statement at hand. The problem which we were addressing was somewhat vague: lack of easy access to certain library resources. Our proposed solutions addressed these concerns. We proposed ways in which library users could access certain library features from anywhere with a WiFi connection. 
+        \subsubsection{Scheduling Feasibility}
+            \paragraph{}
+            % We were given three terms to complete this project. That seemed more than enough time to complete it. By luck, most student team members had flexible schedules and a lot of free now. We saw no trouble in meeting multiple times and week to complete this project within three terms.
+            A major component to making this project run smoothly was to align our schedules so that we could productively work, as a team, on the tasks at hand. This was done using the when2meet software. At the start of each week, each member filled out when they were available. Then we would select a time in which we were all free and meet via zoom, usually for two or three hours. 
+    \newpage   
+    
+%-------------------------------------------------------------------------------------------------------------------------------------------------
+   
+    %Section 3.7
+    \section{Modeling}
+    % "again, part of the iterative process you are talking about, right?"
+    
+        \paragraph{}
+        % We did not perform much modeling. We did complete some mock-ups and story boarding using a tool called "Figma". During the beginning is when our first survey results came back. The features that students wanted to see in our library application were so basic and minimal, that we felt it would be a waste of time formally designing a user interface. Rather, we were able to come up with an idea of the user interface through a single discussion.
+        To model the application, we designed some preliminary mock-ups using Figma, a software designed for story boarding. We experimented with various color themes, settling on a theme which encapsulated the school colors without being overtly overwhelming. We also determined how we wanted to implement the features we planned on using in the application, settling on a one-page design with some features on the top (such as capacity), and a news feed which the user could scroll through from the bottom. 
+    \newpage
+
+%-------------------------------------------------------------------------------------------------------------------------------------------------
+   
+ 
+    %Section 3.9
+    \section{Final Design Strategy}
+    
+    \paragraph{}
+    To produce a product that was operational, usable, and relevant to WPI's students, we needed to use familiar development tools. Thus, we chose IntelliJ-based IDEs in our development environment. We also needed to use languages that we were all familiar with, and ultimately chose Java (but later switched to JavaScript).
+    \paragraph{}
+    We aimed to produce a usable mobile app. We were able to establish the "do"s and "don't"s from our background research, which included research on potential library apps and their production. However, we also had to consider the needs of WPI students, from look to feel. In order to make an app which was usable, we would need to see what our potential library app users found attractive. The plan was to complete a prototype, have potential users (WPI students) test it, and adjust the look-and-feel in accordance to their feedback.
+    \paragraph{}
+    We also wanted to create an app relevant to the \textit{wants} of WPI students. To adhere to this objective, we concluded that we must obtain information from potential users as for which library services they use and those which they do not. For this, we conducted a school-wide survey. The results of this survey was discussed later in our results, and incorporated the analysis into our design strategy.
+    \paragraph{}
+    We now had three tasks in order to complete our broad goal: obtain information via a survey as for which library services are most relevant to potential users, develop prototypes and test them with potential application users to gauge which design respondents were most receptive too, and to develop a functional application based off the feedback from the prototype testing.  
+    \paragraph{}
+    After analysis of the survey results, we settled on which features we would include in the app and which we would not. From here, we developed mock ups as well as a prototype to see, at a sub-functional level, how this application would look when finalized. Prototyping and production of the functional application was not completed.
+    \newpage
+
+%----------------------------------------------------------------------------------------------------------------------------------------------------
+
+%Pages: 8-12
+
+% The Methodology Chapter:  Justifying the “What” and the “How” 
+ 
+% The Methodology chapter is often the most challenging to write.  The chapter needs to state how you broke down your project into analytical components and the systematic process you used to achieve your goal.  Typically, the chapter is organized in terms of a set of project objectives that lead toward the goal.  Each objective typically involves answering certain research questions.  Research questions are answered by applying a methodology (research approach) and suitable methods (data collection techniques).  The types of questions asked will determine the appropriate research approach, and methods.  So, despite the name of the chapter, the methods aren’t really the most important part of this chapter!   
+
+% The Best Methodology Chapters 
+% •	Clarify the goal, objectives, research questions, and methods 
+% •	Describe and analyze the limitations of the methodology/research 
+% •	Describe and analyze the challenges to learning what you needed to learn (without drama or complaints) 
+% •	Develop issues raised in the background section in a consistent and systematic fashion 
+% This chapter should not read like a diary or timeline of what you did – rather, it should make clear what you set out to learn, why this information was important, and how you got it, why the methods you chose were a reasonable choice, how you overcame challenges and what limitations remain. The focus is on information: what you wanted to learn, and how that knowledge was subsequently used.   After you have clearly identified the what, discuss the how. Researchers can choose from, or combine, many methods to answer research questions and achieve objectives, so your job is not to present your approach as the only correct one. However, the reader should conclude that everything you did was intentional, purposeful, planned ahead of time, and based on good practices.   
+% Content 
+% •	Start with the purpose.  Begin by reminding readers of the goal of the project.  
+% •	List the objectives in the introduction to the chapter, and use them to organize the chapter.  For many projects, it will make sense to have a section for each objective. 
+% •	Begin each section with an explanation of the purpose of the objective.  This is not what you did but what information you intended to learn.  Readers will not be able to assess your methods unless they know what you are looking for.  Explain WHY you needed this information.  Make sure each purpose is clear before jumping into details of technique--the “how.” 
+% •	Frame each objective in terms of a set of research questions.  These are the “big picture” questions you need to answer to satisfy that objective. 
+% •	Describe HOW you got the information you needed.  Here is where the methods come in.As you plan the research, you may initially write up the methods that you will use to collect information, then change the tense as you report what you did do.   
+% •	After describing the HOW, justify your choice of methodology and methods (another type of WHY). Drawing upon best practices for methods in the literature gives you more credibility as researchers. Provide enough, but not too much detail.  Someone should be able to repeat your work using information provided in this chapter and in associated Appendices. (For example, a general idea of the nature of interview questions should be evident in this chapter, but you could put the actual schedule of interview questions in an Appendix.)  
+% •	Include a discussion of data analysis– that is, describe not only how you collected information, but also how you planned to use that information to achieve your goal. Wherever possible, think in terms of CRITERIA that you will use to find meaning in your data or to make decisions using data.  Sometimes lists or tables or charts are helpful for laying out criteria and judging options with respect to them. 
+% •	Acknowledge and discuss problems, challenges, limitations, and flaws of your study.  This is important!  Your work will not be credible unless you recognize its limitations.  Proficient researchers describe the problems they had in gathering and analyzing information, and avoid overstated claims of validity.  Rather than judging your work to be successful, provide enough evidence for the reader to make the judgment. 
+ 
+\textbf{% Structure 
+% •	As in the Background chapter, provide a short introductory paragraph, positioned between the Methodology heading and the first section heading (for objective 1), providing a preview of the chapter for the reader.  Often an exact restatement of your Move 5 (from the overall Introduction) is a great introduction.  Number your objectives. 
+% •	Here is a good sample introductory paragraph: 
+% The goal of our project was to assess EGAT’s current environmental communication strategies and make recommendations for improvement specific to Mae Moh’s information needs.  In order to achieve this goal, we developed the following research objectives: 
+% 1.	Build trust with EGAT employees and the Mae Moh communities to learn about their perspectives regarding EGAT’s impacts on local residents.  
+% 2.	Identify EGAT’s communication strategies in terms of content, presentation and accessibility and identify villagers’ information needs regarding pollution and other environmental concerns. 
+% 3.	Develop recommendations by comparing EGAT’s strategies with villagers’ needs to determine gaps.   
+% In this chapter, we describe the methodology we developed to gather and analyze input from key stakeholders, and how the results of that analysis were drawn upon to develop recommendations for EGAT and the Mae Moh villagers. 
+% •	The chapter should be organized by objective and research question, not method or chronology.  This chapter is not a diary of your project; don’t give a timeline of what you did, but rather establish what you set out to do and why.  This is a subtle issue of voice.  Following is an exaggerated example of the voice to avoid: “First we contacted key government officials who had knowledge about building regulations…. After speaking to government officials we met with representatives of advocacy groups for the hearing impaired…. Then we…”  See how that sounds like a diary?  Getting rid of the “time stamps” in this passage would help a lot.  Keep the focus on types of information you sought.  
+% •	Use the past tense in the final IQP report to demonstrate what you have done.  . For example, “We will accomplish our goal by…” should be changed to “We accomplished our goal by….” 
+% •	Avoid use of “We needed to interview..” or “It was necessary to find information on….” or “It was important to…”  There is no single way to do any project, so these are not very convincing claims.  Just say what you did. You can state things much more clearly in active voice: “We interviewed…in order to….”  “We sought information on…for the purpose of…” 
+% •	Although the passive voice is common for writing scientific methodologies, we encourage you to write this chapter in the active voice.  For example, use “we interviewed three people” instead of “three people were interviewed.”  For more examples, consult a writing manual.   
+ 
+% Example: The following segments from a Methodology chapter illustrate some of the key points described above. This example shows a strong “research voice.”  
+ 
+% 3.1 Objective 1 
+% Build trust with EGAT employees and Mae Moh communities to learn about their perspectives regarding EGAT’s impacts on local residents. 
+% Studies show that outside researchers must overcome obstacles when becoming involved with and researching a culturally unfamiliar community.  Some even believe that outside researchers cannot understand or represent the experience of the community (Bridges, 2001).  Because of this… 
+% As outsiders in Thailand, the biggest challenge that we faced was establishing trust and credibility with Mae Moh and EGAT. Gaining trust from the villagers was especially difficult because… 
+% As outsiders with little credibility in the Mae Moh and EGAT communities, we adopted strategies recommended in our research for achieving open and trusting relationships with both.  These strategies required….  
+% (There was much more to this objective.  The team went on to describe and defend their strategies for gaining trust with each of the stakeholders.) 
+% 3.2 Objective 2  
+% Identify EGAT’s communication strategies in terms of content and accessibility and identify Mae Moh’s information needs regarding pollution and other environmental concerns. 
+% We set out to learn about EGAT’s current communication techniques and Mae Moh’s environmental information needs as a foundation for developing recommendations.  To evaluate communication in Mae Moh, we focused on two particularly important components of risk communication model development: informational content and accessibility.  Knowing these components from both perspectives allowed us to compare EGAT’s efforts with the community’s needs and determine disparities.  To determine the problems with content, and accessibility, we chose historical research and semi-standardized interviews due to limited information on interviewees.  The historical research mentioned earlier allowed us to discover previous efforts in environmental safety and communication.  Interviews at EGAT and informal discussion with communities helped to bridge the gaps in the literature.  Interview and discussion questions were based on the following research questions used to establish our information needs: 
+% ▪	What informational content does EGAT communicate? 
+% ▪	What do Mae Moh villagers want to know? 
+% ▪	What is the presentation of information? 
+% ▪	Who presents this information? 
+% ▪	How does the community receive information? 
+% ▪	How does the relationship between EGAT and the community influence reception? 
+% Using our research questions, we formed interview and discussion questions specific to the interviewees’ responsibilities and knowledge. We were also careful to avoid offensive and unprofessional language.   
+% We directed interview questions at EGAT employees.  In total, we interviewed 18 EGAT employees in several departments (see Table 1 for details.)  Each group member undertook a task during the interview process….   
+% For interviewing community members, we faced similar language concerns.  A translator minimized such communication problems to the extent possible.  Our translator, Hatarat Poomkachar, is a social science researcher from Chulalongkorn University.  She facilitated communication between our team and the community.  She has had experience…We intended to present our research findings back to the community at the end of our research process to allow for corrections and feedback. However, due to time limitations and lack of a translator in our final week in Mae Moh, we could not implement this feedback process…. 
+% With these difficulties in mind, we spoke with villagers to determine their understanding of EGAT’s operations and their awareness of communication efforts. In total, we spoke with 22 villagers, generally in a group discussion format (see Table 2 for details).  Personal interviews usually lasted about one hour while group discussions lasted longer, about 1.5-2 hours. We visited Pong Chai and Na Sak once, each for approximately 4-6 hours.  We visited Hua Fai twice due to villagers’ eagerness to speak to us and share their opinions.  We also spoke with teachers and students from the local high school, all of which are residents of villages in Mae Moh district.  We gathered general community knowledge of EGAT’s operations and pollution through informal discussion.  We discussed EGAT’s efforts in order to assess the public’s comprehension of and access to environmental information.  The data collected provided insight into possible communication improvements.  It indicated what informational content the people are concerned about, which presentation methods best suit their needs, and who they trust to communicate the information. 
+ 
+% Features of Effective Findings Chapters 
+% •	Move directly to stating claims, rather than rehashing methods all over again.  
+% •	Avoid data dumping (present new knowledge, not raw data) 
+% •	Contain in-depth analysis 
+% •	Have firm but appropriately qualified claims rather than overstated claims  
+% •	Refer and utilize the literature wherever possible 
+% •	Are consistent with what you said you would do in the Methodology chapter}
